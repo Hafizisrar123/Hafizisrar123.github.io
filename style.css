@@ -72,3 +72,13 @@ nav ul a{
 .hero-content h2{
     font-size: 28px;
 }
+@media (max-width:767px){
+    .hero-section{
+        flex-direction: column;
+    }
+    .hero-img{
+        width: 370px;
+        height: 380px;
+    
+    }
+}
