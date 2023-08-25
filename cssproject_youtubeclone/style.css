@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  overflow: hidden;
+}
+header{
+  padding: 10px 20px;
+  background-color: white;
+}
+.bar{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bar:hover{
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color:rgb(216, 213, 213) ;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.youtube-logo img{
+  width: 131px;
+  height: 29px;
+}
+.center-nav{
+  display: flex;
+  gap: 20px;
+}
+.search{
+
+  display: flex;
+  align-items: center;
+}
+.search input{
+
+min-width: 600px;
+min-height: 50px;
+padding: 0 30px;
+border-radius: 25px 0 0 25px;
+border: 1px solid gray;
+}
+.search input::placeholder{
+  font-size: 20px;
+}
+.search button{
+  width: 70px;
+  height: 50px;
+  border-radius: 0 25px 25px 0;
+  border: 1px solid gray;
+  border-left: none;
+}
+.search button:hover{
+  background-color:rgb(216, 213, 213) ;
+}
+.center-nav .mic{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 242, 242);
+}
+.center-nav .mic:hover{
+  background-color:rgb(216, 213, 213);
+}
+.side-nav{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.side-nav .side-nav-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+.side-nav .side-nav-img:hover{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color:rgb(216, 213, 213);
+}
+.side-nav .avatar{
+  width: 50px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+.side-nav .avatar img{
+background-color: gray;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+}
+.tags{
+  display: flex;
+  gap: 20px;
+  padding-bottom: 10px;
+
+}
+.tags button{
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+.dark{
+  background-color: black;
+  color: white;
+}
+aside{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.side-icons{
+display: flex;
+gap: 30px;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.side-icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.side-icon img{
+  width: 30px;
+  height: 30px;
+}
+.side-icon p{
+  font-size: 12px;
+}
+
+.aside-container{
+  position: relative;
+}
+
+.container{
+  display: flex;
+  gap: 15px;
+  padding: 10px 20px;
+
+}
+main{
+  padding-left: 10px;
+  
+}
+.cards{
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  height: 80vh;
+}
+.card{
+ min-width: 580px;
+ margin-bottom: 10px;
+}
+.card img{
+  width: 100%;
+  border-radius: 20px;
+}
+.card-content{
+  display: flex;
+  gap: 10px;
+}
+
+.card .avatar img{
+  background-color: gray;
+  border-radius: 50%;
+}
+/* For mobile devices */
+@media (max-width: 767px){
+  .youtube-logo{
+    width: 50%;
+    height: 50%;
+  }
+  .search input{
+    display: none;
+    min-width: 250px;
+    min-height: 50px;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+    border: 1px solid gray;
+    }
+    .search input::placeholder{
+      font-size: 17px;
+    }
+    .search button{
+      display: none;
+      width: 70px;
+      height: 50px;
+      border-radius: 0 25px 25px 0;
+      border: 1px solid gray;
+      border-left: none;
+    }
+    .search button img{
+      display: block;
+    }
+   aside{
+    display: none;
+   }
+
+}
+@media (min-width:768px) and (max-width:1024px){
+  .search input{
+    min-width: 350px;
+    min-height: 50px;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+    border: 1px solid gray;
+    }
+    .search input::placeholder{
+      font-size: 17px;
+    }
+    .search button{
+      width: 70px;
+      height: 50px;
+      border-radius: 0 25px 25px 0;
+      border: 1px solid gray;
+      border-left: none;
+    }
+    
+  
+}
+@media (min-width:1024px) and (max-width:1280px){
+  .search input{
+    min-width: 500px;
+    min-height: 50px;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+    border: 1px solid gray;
+    }
+    .search input::placeholder{
+      font-size: 17px;
+    }
+    .search button{
+      width: 70px;
+      height: 50px;
+      border-radius: 0 25px 25px 0;
+      border: 1px solid gray;
+      border-left: none;
+    }
+  
+}

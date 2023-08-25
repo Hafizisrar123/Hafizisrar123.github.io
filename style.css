@@ -23,10 +23,17 @@ html {
   color: white;
 }
 header{
-    padding: 10px 20px;
     background-color: #0089b7;
+    position: sticky;
+    z-index: 10;
+    top: 0;
 }
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
 nav{
+    padding: 20px 0;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -57,7 +64,7 @@ nav ul a{
     background-color: #003d62;
 }
 .hero-img{
-    width: 370px;
+    width: 400px;
     height: 550px;
 
 }
@@ -69,9 +76,153 @@ nav ul a{
 .hero-content h1{
     font-size: 48px;
 }
-.hero-content h2{
-    font-size: 28px;
+.hero-content{
+    display: grid;
+    place-items: center;
 }
+.hero-section h2{
+    font-size: 4rem;
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+  
+hr{
+  
+    height: 5px;
+    
+    background-color: #0089b7;
+}
+.projects{
+    background-color: #003251;
+   
+}
+
+.projects h1{
+    font-size: 32px;
+    text-align: center;
+    padding: 20px 0;
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 32px;
+}
+
+.grid-item{
+    display: grid;
+    place-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+   transition: 0.2s ease-in-out;
+}
+.card:hover{
+    transition: 0.2s ease-in-out;
+}
+.card:hover img{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+.card-title h2{
+    text-align: center;
+}
+.card:hover .card-title{
+    transform: translateY(0);
+    background-color: white;
+    color: black;
+}
+.card-title{
+    position: relative;
+    top: -6.5rem;
+    margin-bottom: -6.5rem;
+    transition: 0.5s ease-in-out;
+    padding: 2rem;
+    color: black;
+    transform: translateY(100px);
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* .projects-container{
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+}
+.grid-item{
+    display: grid;
+    place-items: center;
+}
+.card {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover{
+    transition: 0.2s ease-in-out; 
+}
+.card:hover img{
+   
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    opacity: 0.8; 
+}
+.card:hover .card-title{
+    transform: translateY(0);
+    background-color: white;
+    color: black;
+}
+.card-title{
+    padding: 2rem;
+    position: relative;
+    top: -6.5rem;
+    margin-bottom: -6.5rem;
+    transition: 0.5s ease-in-out;
+    transform: translateY(100px);
+}
+.card-title h2{
+    text-align: center;
+} */
+
+
+
+
+
+
 @media (max-width:767px){
     .hero-section{
         flex-direction: column;
