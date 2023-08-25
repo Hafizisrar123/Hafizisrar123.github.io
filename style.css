@@ -79,13 +79,13 @@ nav ul a{
 .hero-content{
     display: grid;
     place-items: center;
+    text-align: center;
 }
 .hero-section h2{
     font-size: 4rem;
     overflow: hidden;
     border-right: 0.15em solid orange;
     white-space: nowrap;
-    
     animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 @keyframes typing {
