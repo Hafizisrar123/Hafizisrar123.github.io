@@ -224,8 +224,12 @@ a{
 
 
 @media (max-width:767px){
+    nav{
+        padding: 0 10px;
+    }
     .hero-section{
         flex-direction: column;
+        padding: 0 10px;
     }
     .hero-img{
         width: 370px;
