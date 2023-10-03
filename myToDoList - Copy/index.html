@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="toDoList">
+        <h1>ToDO List</h1>
+        <input type="text" id="addInput" placeholder="Add to List" />
+        <button id="btn">Add</button>
+        <ol id="toDoList"></ol>
+      </div>
+
+      <div class="searchList">
+        <h1>Search from List</h1>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search"
+          onkeyup="searchString()"
+        />
+
+        <ol id="searchList"></ol>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
